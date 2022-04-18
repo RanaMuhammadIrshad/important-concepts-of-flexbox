@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* columns of equal height */
+
+.even-columns {
+    display: flex;
+gap:5rem;
+}
+
+.even-columns > * {
+    flex-basis: 100%;
+}
+.col {
+    padding:4rem ;
+    background-color: bisque;
+    border: 1px solid black;
+/*     flex-basis:100%; */
+}
+
+/* Responsive columns */
+
+.grid-ish {
+display: flex;
+gap: 5rem;
+flex-wrap: wrap;
+}
+
+.grid-ish > * {
+    flex: 1 1 30rem;
+}
+
+/* content and sidebar */
+
+.content-sidebar {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.content-sidebar > *:nth-child(1) {
+    flex: 1 1 70%;
+    min-width: 40ch;
+}
+.content-sidebar > *:nth-child(2) {
+    flex: 1 1 25%;
+}
